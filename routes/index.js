@@ -6,6 +6,6 @@ router.get('/', (req, res) => {
   res.send('Index Route');
 });
 
-router.post('/users/all', allUser);
+router.get('/users/all', allUser);
 
 module.exports = router;
