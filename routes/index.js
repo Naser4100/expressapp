@@ -6,7 +6,7 @@ router.get('/', (req, res) => {
   res.send('Index Route');
 });
 
-router.get('/users', (req, res) => {
+router.get('/users/all', (req, res) => {
   res.status(200).json({
     data : [{
       username: 'sohel123',
