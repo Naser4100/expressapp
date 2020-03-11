@@ -1,13 +1,9 @@
-const router = require('express').Router();
-
-router.get('/all', (req, res) => {
+exports.allUser = (req, res) => {
   res.status(200).json({
-    data : [{
+    data: [{
       username: 'sohel123',
     }, {
       username: 'user123',
     }],
   });
-});
-
-module.exports = router;
+};
