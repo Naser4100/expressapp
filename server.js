@@ -1,4 +1,5 @@
 const express = require('express');
+const index = require('./routes/index');
 
 const app = express();
 
@@ -8,6 +9,8 @@ app.use(express.json());
 app.get('/', (req, res) => {
   res.send('Hello world');
 });
+// Mount Router
+app.use('/api', index);
 
 const PORT = process.env.PORT || 5000;
 
